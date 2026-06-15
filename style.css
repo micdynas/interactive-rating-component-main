@@ -2,7 +2,6 @@ body{
     background-color:hsl(216, 12%, 8%);
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +22,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     padding: 1.3rem;
-    position: absolute;
+   transition: all 0.2s ease;
   
 }
 .main-container.active{
@@ -56,6 +55,7 @@ body{
     display: flex;
     gap: 1rem;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 0;
 }
@@ -174,13 +174,13 @@ body{
 }
 
 /* Responsive breakpoints */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     /* first card */
     .main-container{
     width: 80%;
     height: 50%;
     padding-top: 0.5rem;
-    margin: 0 1rem 0 0;
+    margin: 0 0.5rem 0 0;
 }
  .star{
     width: 3rem;
@@ -252,9 +252,7 @@ body{
 
 }
 
-@media screen and (max-width: 400px) {
 
-}
 
 /* Landscape mode adjustments */
 @media screen and (max-height: 600px) and (orientation: landscape) {
@@ -262,6 +260,82 @@ body{
 }
 
 /* High-DPI screens */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1444px) {
+     /* first card */
+  .main-container{
+    width: 38%;
+    height: 62%;
+    padding-top: 0.6rem;
+    margin: 0;
+}
+ .star{
+    width: 3.7rem;
+    height: 3.7rem;
+ }
+ 
+.header{
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+    padding: top 0;
+
+}
+.paragraph{
+    font-size: 1.2rem;
+    margin: 0.7rem 0 0;
+    width: 90%;
+}
+.numbers{
+    width: 4rem;
+    height: 3.7rem;
+    font-size: 1.2rem;
+   margin-left: 0.5rem;
+
+}
+
+.submit{
+   height: 3.7rem;
+   font-size: 1.2rem;
+    
+}
+
+/* second card */
+.sec-container{
+   width: 40%;
+    height: 62%;
+    padding-top: 0.5rem;
+    margin: 0;
+
+}
+.illustration{
+    width: 13rem;
+    height: 9rem;
+    margin-top: 2rem;
+}
+.image{
+   width: 13rem;
+   height: 9rem;
+
+}
+
+.but-2{
+    margin-top: 1.6rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+}
+.sec-text{
+    margin-top: 0rem;
+    width: 100%;
+}
+.sec-text h1{
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+.sec-text p{
+    font-size: 1.3rem;
+    margin: 0;
+   
+}
+
+
    
 }
